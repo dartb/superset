@@ -16,7 +16,7 @@ services:
     volumes:
       - mysql:/var/lib/mysql
   superset:
-    build: .
+    #build: .
     image: amancevice/superset
     restart: always
     depends_on:
@@ -26,8 +26,8 @@ services:
       MAPBOX_API_KEY: ${MAPBOX_API_KEY}
     ports:
       - "8088:8088"
-    volumes:
-      - "./superset_config.py:/home/superset/superset_config.py"
+    #volumes:
+    #  - "./superset_config.py:/home/superset/superset_config.py"
 volumes:
   mysql:
     external: false

@@ -1,0 +1,6 @@
+redis:
+  scale: 1
+mysql:
+  scale: 1
+superset:
+  scale: 1
