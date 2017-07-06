@@ -5,8 +5,14 @@ Manual Rancher installation steps:
 4. Once the application stack has started and all containers are running, click on the superset container link.
 5. In that container, click on the three vertical dots button and select ‘Execute Shell’. Note: you want to make sure to click the three vertical dots button to the right of the container and not in the upper right.
 6. In the shell you will want to enter the following commands in order (the first one will ask you to provide user/pass info):
-```fabmanager create-admin --app superset```
-```superset db upgrade```
-```superset load_examples```
-```superset init```
+
+	```fabmanager create-admin --app superset```
+
+	```superset db upgrade```
+
+	```superset load_examples```
+
+	```superset init```
+
+
 7. When that is completed successfully, close the shell window, return to the Rancher stack view and click on the port link (default is 8088) in the superset container row. This will launch the application. Enter in the user/pass information you added in step 6 and you should be good to go.
